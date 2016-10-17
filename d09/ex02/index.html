@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To do or not to do</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="todo.js"></script>
+		<style>
+			#ft_list {
+				width: 300px;
+				height: 50px;
+				margin: auto;
+				padding:2%;
+			}
+			#to_do {
+				width: 300px;
+				height: 50px;
+				margin: 1%;
+				background-color: white;
+				text-align: center;
+				line-height:50px;
+			}
+			#add {
+				cursor:pointer;
+				width:60px;
+				height:30px;
+			}
+		</style>
+	</head>
+	<body style="background-color:#183653">
+		<h1 align="center" style="color:white">To do list</h1>
+		<div align="center">
+			<input id='add' type="submit" value="New" onclick="create_div()"></div>
+		<div id="ft_list">
+			<script>checkCookie();</script>
+		</div>
+	</body>
+</html>

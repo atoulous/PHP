@@ -1,0 +1,56 @@
+body {
+	background-color:lightblue;
+	color:#2b5377
+}
+
+h1 {
+	text-align:center;
+	font-size:5vw;
+	font-style:italic;
+	text-shadow: 1vw 1vw 1vw;
+}
+
+h3 {
+	text-align:center;
+	font-size:2vw;
+	font-style:italic;
+}
+
+table {
+	margin:auto;
+}
+
+td {
+	background-color:#fbf1f1;
+	border: 1vw ridge #983535;
+	border-radius:2vw;
+	box-shadow: 1vw 1vw 1vw #983535;
+	padding:2vw;
+	height:12vh;
+	width:12vw;
+}
+
+select {
+	font-size:1vw;
+	background-color:white;
+}
+
+.command {
+	text-align:center;
+	margin-top:4vw;
+	font-size:2vw;
+}
+
+.entree {
+	float:left;
+}
+
+.plat {
+	float:left;
+	margin-right:2vw;
+	margin-left:2vw;
+}
+
+.desert {
+	float:right;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Javascript</title>
+		<style>
+			#id {
+				margin: auto;
+				height: 200px;
+				width: 200px;
+				border-radius: 100%;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='id' onclick="change()" onmouseleave="reduce(this)">
+			<script>
+			function change() {
+				var elem = document.getElementById('id');
+				var get_color = window.getComputedStyle(elem,null).getPropertyValue("background-color");
+				var get_width = parseInt(window.getComputedStyle(elem,null).getPropertyValue("width"));
+				if (get_color == "rgb(255, 0, 0)")
+					document.getElementById('id').style.background="green";
+				else if (get_color == "rgb(0, 128, 0)")
+					document.getElementById('id').style.background="blue";
+				else if (get_color == "rgb(0, 0, 255)")
+					document.getElementById('id').style.background="red";
+				if (get_width <= 420) {
+					document.getElementById('id').style.width=get_width + 10 + "px";
+					document.getElementById('id').style.height=get_width + 10 + "px";
+				}
+				else if (get_width > 420) {
+					document.getElementById('id').style.width="200px";
+					document.getElementById('id').style.height="200px";
+				}
+			}
+			function reduce(x) {
+				if (x.style.background == "red")
+					x.style.background="blue";
+				else if (x.style.background == "green")
+					x.style.background="red";
+				else if (x.style.background == "blue")
+					x.style.background="green";
+				if (parseInt(x.style.width) > 200) {
+					x.style.width = parseInt(x.style.width) - 5 + "px";
+					x.style.height = parseInt(x.style.height) - 5 + "px";
+				}
+			}
+			</script>
+		</div>
+	</body>
+</html>

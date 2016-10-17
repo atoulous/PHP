@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Javascript</title>
+		<meta charset="UTF-8">
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<style>
+			#id {
+				margin: auto;
+				height: 200px;
+				width: 200px;
+				border-radius: 100%;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='id'>
+			<script>
+			$(document).ready(function() {
+			$('#id').click(function() {
+				$('#id').css("width", "+=10");
+				$('#id').css("height", "+=10");
+				if ($('#id').width() > 420) {
+					$('#id').width(200);
+					$('#id').height(200);
+				}
+				if ($('#id').css("background-color") == "rgb(255, 0, 0)")
+					$('#id').css("background-color", "green");
+				else if ($('#id').css("background-color") == "rgb(0, 128, 0)")
+					$('#id').css("background-color", "blue");
+				else if ($('#id').css("background-color") == "rgb(0, 0, 255)")
+					$('#id').css("background-color", "red");
+				})
+			})
+			$('#id').mouseout(function() {
+
+				if ($('#id').width() > 200) {
+					$('#id').css("width", "-=5");
+					$('#id').css("height", "-=5");
+				}
+				if ($('#id').css("background-color") == "rgb(255, 0, 0)")
+					$('#id').css("background-color", "blue");
+				else if ($('#id').css("background-color") == "rgb(0, 128, 0)")
+					$('#id').css("background-color", "red");
+				else if ($('#id').css("background-color") == "rgb(0, 0, 255)")
+					$('#id').css("background-color", "green");
+			})
+			</script>
+		</div>
+	</body>
+</html>

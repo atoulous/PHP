@@ -1,0 +1,45 @@
+body {
+	background-color:lightblue;
+	height:100%;
+	width:100%;
+}
+table {
+	border:0px solid black;
+	border-collapse:collapse;
+	margin-top:10%;
+}
+td {
+	border:1px solid black;
+	font-family:monospace;
+	text-align:center;
+	background-color:#fef4f4;
+	width:5vw;
+	height:5vh;
+	font-size:2vw;
+}
+.masse {
+	font-size:50%;
+	text-align:right;
+	vertical-align:top;
+	}
+	.numero {
+	font-size:50%;
+	text-align:left;
+	vertical-align:bottom;
+	}
+	.img {
+	border:0px solid black;
+	border-radius:10px;
+	background-color:lightblue;
+	}
+	#img {
+	width:40vw;
+	height:60vh;
+	border-radius:10px;
+	}
+	.copyright {
+	text-align:right;
+	font-style:italic;
+	font-family:monospace;
+	font-size:1vw;
+}

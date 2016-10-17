@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Javascript</title>
+		<style>
+			body {
+				background-color: lightblue;
+			}
+			h3 {
+				text-align:center;
+				padding-top:5%;
+				color:white;
+			}
+			#calculette {
+				margin: auto;
+				height: 200px;
+				width: 400px;
+				border-radius: 5%;
+				background-color: teal;
+			}
+			#nbrLeft {
+				float:left;
+				margin:5%;
+				height:10%;
+				width:30%;
+				border:2px inset white;
+				padding:1%;
+			}
+			#nbrRight {
+				float:right;
+				margin:5%;
+				height:10%;
+				width:30%;
+				border:2px inset white;
+				padding:1%;
+			}
+			#operateurs {
+				margin-top:6%;
+				margin-left:2%;
+			}
+			#submit {
+				text-align:center;
+				margin-left:40%;
+				height:15%;
+				width:20%;
+				background:#4CAF50;
+				color:white;
+				border:2px outset white;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='calculette'>
+			<h3>Calculatrice pk6500.43.21v2</h3>
+			<input id='nbrLeft' type='text'>
+			<input id='nbrRight' type='text'>
+			<select id='operateurs'>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option></select>
+			<input id='submit' type='submit' value="Try me!" onclick='calcul()'>
+			<script>
+					function calcul() {
+						val1 = document.getElementById('nbrLeft').value;
+						val2 = document.getElementById('nbrRight').value;
+						op = document.getElementById('operateurs').value;
+						if (parseInt(val1) >= 0  && parseInt(val2) >= 0) {
+							if (op == "+") {
+								alert(parseInt(val1) + parseInt(val2));
+								console.log(parseInt(val1) + parseInt(val2));
+							}
+							else if (op == "-") {
+								alert(parseInt(val1) - parseInt(val2));
+								console.log(parseInt(val1) - parseInt(val2));
+							}
+							else if (op == "*") {
+								alert(parseInt(val1) * parseInt(val2));
+								console.log(parseInt(val1) * parseInt(val2));
+							}
+							else if (op == "/") {
+								if (parseInt(val1) == 0 || parseInt(val2) == 0) {
+									alert("It's over 9000!")
+									console.log("It's over 9000!")
+								}
+								else {
+									alert(parseInt(val1) / parseInt(val2));
+									console.log(parseInt(val1) / parseInt(val2));
+								}
+							}
+							else if (op == "%") {
+								if (parseInt(val1) == 0 || parseInt(val2) == 0) {
+									alert("It's over 9000!")
+									console.log("It's over 9000!")
+								}
+								else {
+									alert(parseInt(val1) % parseInt(val2));
+									console.log(parseInt(val1) % parseInt(val2));
+								}
+							}
+						}
+						else {
+							alert('Error :(');
+							console.log('Error :(');
+						}
+					}
+					setInterval(function () {alert("Please, use me...")}, 30000);
+			</script>
+		</div>
+	</body>
+</html>

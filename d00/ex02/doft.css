@@ -1,0 +1,190 @@
+body {
+	background-color:#505050;
+	height:100%;
+	width:100%;
+}
+
+div.top {
+	padding-left:10%;
+	padding-right:10%;
+}
+
+div.dayofthe42 {
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+	background-color:#909090;
+	height:100%;
+	width:100%;
+}
+
+div.menu {
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+	background-color:#909090;
+	height:25%;
+	width:8%;
+	margin-top:2%;
+	margin-left:12%;
+	float:left;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+div.cluster {
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+	background-color:#909090;
+	padding:1%;
+	width:53%;
+	float:left;
+	margin-left:2%;
+}
+
+div.menu2 {
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+	background-color:#909090;
+	height:25%;
+	width:8%;
+	margin-left:79%;
+	margin-top:2%;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+div.enter {
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+	background-color:#87FE8F;
+	height:10vw;
+	width:30vw;
+	position:absolute;
+	margin-left:8%;
+	margin-top:6%;
+	font-size:1vw;
+	font-family:times;
+	padding-left:1%;
+}
+
+div.bande {
+	border: 2px inset white;
+	background-color: white;
+	width:70%;
+	height:10%;
+	float:left;
+	margin-bottom:40%;
+}
+
+div.repondre {
+	border: 2px outset white;
+	background-color: #E0E0E0;
+	width: 15%;
+	height:10%;
+	margin-left:75%;
+	font-size:1vw;
+	text-align:center;
+}
+
+#book {
+	display:block;
+	margin:auto;
+	width:50%;
+	height:50%;
+	padding:2%;
+}
+
+#towel {
+	display:block;
+	margin:auto;
+	width:50%;
+	height:50%;
+	padding:2%;
+}
+
+#brick {
+	display:block;
+	margin:auto;
+	background:url("resources/brick.jpg") 0 0 repeat;
+	width:80%;
+	height:4vw;
+	margin-bottom:85%;
+}
+
+#cluster {
+	width:100%;
+	height:100%;
+}
+
+#arrow {
+	display:block;
+	width:50%;
+	height:50%;
+	padding:2%;
+	margin-left:22%;
+}
+
+#main {
+	display:block;
+	width:50%;
+	height:50%;
+	padding:2%;
+	margin-left:22%;
+}
+
+#oeil {
+	border-radius:5px;
+	display:block;
+	width:50%;
+	height:50%;
+	border: 4px solid red;
+	padding:2%;
+	margin-left:20%;
+}
+
+#outil {
+	display:block;
+	width:50%;
+	height:50%;
+	padding:2%;
+	margin-left:22%;
+}
+
+#chat {
+	display:block;
+	width:50%;
+	height:50%;
+	padding:2%;
+	margin-left:22%;
+}
+
+#dayofthe42 {
+	margin-left:0%;
+	width:40%;
+	height:40%;
+	padding:1%;
+}
+
+#loupe {
+	width:23%;
+	height:23%;
+	margin-top:2%;
+	margin-right:2%;
+	float:right;
+}
+
+#reload {
+	width:1.5%;
+	height:1.5%;
+	position: absolute;
+	margin-top:0.5%;
+	margin-left:44.5%;
+	float:right;
+}
+
+#close {
+	width:1.5%;
+	height:1.5%;
+	position: absolute;
+	margin-top:8.5%;
+	margin-left:44.5%;
+}
